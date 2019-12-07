@@ -1,23 +1,14 @@
 import React from "react";
 import "../styles/App.scss";
-
-const Header = () => {
-  return <header className="c-header"></header>;
-};
-
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  return (
-    <footer className="c-footer">
-      <p className="c-footer__copyright-text">Copyright {currentYear}.</p>
-    </footer>
-  );
-};
+import Header from "./Header";
+import Footer from "./Footer";
+import Note from "./Note";
 
 const App = () => {
   return (
     <div className="c-App">
       <Header />
+      <Note title="Test title" content="Test content." />
       <Footer />
     </div>
   );
