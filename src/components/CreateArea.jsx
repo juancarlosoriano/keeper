@@ -7,8 +7,7 @@ function CreateArea(props) {
   });
 
   const handleChange = event => {
-    const name = event.target.name;
-    const value = event.target.value;
+    const { name, value } = event.target;
     setFormText(prevState => ({
       ...prevState,
       [name]: value
